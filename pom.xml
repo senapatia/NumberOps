@@ -4,14 +4,17 @@
   <artifactId>NumberOperation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <build>
-  <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
-<dependency>
+  <dependencies>
+  <dependency>
     <groupId>jakarta.servlet</groupId>
     <artifactId>jakarta.servlet-api</artifactId>
     <version>5.0.0</version>
     <scope>provided</scope>
 </dependency>
+</dependencies>
+  <build>
+  <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+
 
     <plugins>
       <plugin>
