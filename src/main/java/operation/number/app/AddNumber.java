@@ -17,9 +17,9 @@ public class AddNumber extends HttpServlet {
 		int sum = firstNumber + secondNumber;
 // PrintWriter out = res.getWriter();
 // res.getWriter().println("result is = "+k);
-//		req.setAttribute("K", k);
-//		RequestDispatcher rd = req.getRequestDispatcher("Square");
-//		rd.forward(req, res);
+// req.setAttribute("K", k);
+// RequestDispatcher rd = req.getRequestDispatcher("Square");
+// rd.forward(req, res);
 
 		res.sendRedirect("Square?sum=" + sum);
 	}
