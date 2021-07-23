@@ -12,19 +12,15 @@ import jakarta.servlet.http.HttpServletResponse;
 public class AddNumber extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-		
 		int firstNumber = Integer.parseInt(req.getParameter("num1"));
 		int secondNumber = Integer.parseInt(req.getParameter("num2"));
-				
 		int sum = firstNumber + secondNumber;
-
 // PrintWriter out = res.getWriter();
-// res.getWriter().println("result is = "+sum);
-// req.setAttribute("sum", sum);
-// RequestDispatcher rd = req.getRequestDispatcher("Square");
-// rd.forward(req, res);
-		
-		res.sendRedirect("Square?sum=" + sum);
+// res.getWriter().println("result is = "+k);
+//		req.setAttribute("K", k);
+//		RequestDispatcher rd = req.getRequestDispatcher("Square");
+//		rd.forward(req, res);
 
+		res.sendRedirect("Square?sum=" + sum);
 	}
 }
