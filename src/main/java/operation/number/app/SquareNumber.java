@@ -17,7 +17,7 @@ public class SquareNumber extends HttpServlet {
 		
 		PrintWriter out = res.getWriter();
 		out.println("Square Of Sum Of The Two Numbers Is " + Result);
-		// System.out.println("Square called");
+// System.out.println("Square called");
 
 	}
 }
